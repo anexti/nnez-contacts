@@ -1,4 +1,5 @@
 nnez-contacts
 =============
 
-A contacts web application that based on django.
+A web application of contacts that based on django.
+
