@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"github.com/robfig/revel"
-	"github.com/robfig/revel/samples/chat/app/chatroom"
+	"nnez-contacts/nnez-chat/app/chatroom"
 )
 
 type Refresh struct {
