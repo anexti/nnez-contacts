@@ -1,0 +1,43 @@
+{{set . "title" "Sign in"}}
+{{template "header.html" .}}
+
+<div id="home">
+
+  <h2>NNEZ Class 10 Grade 09 Chatroom</h2>
+
+  <div id="signin">
+    <form action="{{url "Application.EnterDemo"}}">
+      {{if .flash.error}}
+        <p class="error">
+          {{.flash.error}}
+        </p>
+      {{end}}
+      <p>
+        <label for="nick">Choose a nick name</label>
+        <input type="text" name="user" id="user">
+        <label for="nick">Password</label>
+        <input type="password" name="password" id="password">
+      </p>
+      <p>
+<!--
+        <label for="nick">Demonstration</label>
+-->
+        <input type="hidden" name="demo" value="websocket">
+<!--
+        <select name="demo" >
+          <option></option>
+          <option value="refresh">Ajax, active refresh</option>
+          <option value="longpolling">Ajax, long polling</option>
+          <option value="websocket" selected="selected">WebSocket</option>
+        </select>
+-->
+      </p>
+      <p>
+        <label></label>
+        <input type="submit" id="enter" value="Enter the chat room">
+      </p>
+    </form>
+  </div>
+
+</div>
+{{template "footer.html" .}}
